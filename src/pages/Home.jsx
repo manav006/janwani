@@ -4,10 +4,10 @@ import Navbar from '../Components/Navbar'
 import { Link } from 'react-router-dom'
 
 // Import your images (adjust the paths according to your directory structure)
-import Image1 from '../assets/img1.jpg'
-import Image2 from '../assets/img2.jpg'
-import Image3 from '../assets/img3.jpg'
-import Image4 from '../assets/logo.jpg'
+import Image1 from '../assets/r1.jpg'
+import Image2 from '../assets/r2.jpg'
+import Image3 from '../assets/Govt.jpg'
+import Image4 from '../assets/img1.jpg'
 
 const Home = () => {
   const [ticketId, setTicketId] = useState('')

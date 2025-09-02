@@ -11,7 +11,7 @@ export default function EditProfile() {
         username: "",
         email: "",
         phone: "",
-        state: "",
+        city: "",
         district: "",
     });
 
@@ -79,9 +79,9 @@ export default function EditProfile() {
 
                 <input
                     type="text"
-                    name="state"
-                    placeholder="State"
-                    value={formData.state}
+                    name="city"
+                    placeholder="city"
+                    value={formData.city}
                     onChange={handleChange}
                     className="w-full p-4 mb-3 border rounded-md bg-[#F0F0F0]  border-none"
                 />
