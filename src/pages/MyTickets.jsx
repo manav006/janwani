@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Ticket } from 'lucide-react'
+import { Ticket ,User} from 'lucide-react'
 import Navbar from '../Components/Navbar';
 import { Link } from 'react-router-dom';
 
@@ -10,8 +10,8 @@ export default function MyTickets() {
   const tickets = [
     {
       id: 1,
-      title: 'Title for Issue...',
-      date: 'Mar 20, 2024',
+      title: 'Potholes on the road',
+      date: 'Aug 20, 2025',
       status: 'Pending',
       bgColor: 'bg-orange-200',
       textColor: 'text-orange-600',
@@ -19,8 +19,8 @@ export default function MyTickets() {
     },
     {
       id: 2,
-      title: 'Title for Issue...',
-      date: 'Mar 18, 2024',
+      title: 'Malfunctioning Street Light',
+      date: 'July 18, 2025',
       status: 'Submitted',
       bgColor: 'bg-blue-200',
       textColor: 'text-blue-600',
@@ -28,8 +28,8 @@ export default function MyTickets() {
     },
     {
       id: 3,
-      title: 'Title for Issue...',
-      date: 'Mar 15, 2024',
+      title: 'Water Leakage Issue',
+      date: 'Apr 15, 2025',
       status: 'Completed',
       bgColor: 'bg-green-200',
       textColor: 'text-green-600',
@@ -37,8 +37,8 @@ export default function MyTickets() {
     },
     {
       id: 4,
-      title: 'Another Issue...',
-      date: 'Mar 12, 2024',
+      title: 'Garbage Collection Delay',
+      date: 'Aug 12, 2025',
       status: 'Pending',
       bgColor: 'bg-orange-200',
       textColor: 'text-orange-600',
@@ -46,8 +46,8 @@ export default function MyTickets() {
     },
     {
       id: 5,
-      title: 'System Bug Report',
-      date: 'Mar 10, 2024',
+      title: 'Broken Park Bench',
+      date: 'Mar 10, 2025',
       status: 'Completed',
       bgColor: 'bg-green-200',
       textColor: 'text-green-600',
@@ -66,7 +66,9 @@ export default function MyTickets() {
       {/* Header Card */}
       <div className=" rounded-3xl p-4 mb-3">
         <div className="flex items-center mb-6">
-          <div className="w-8 h-8 bg-gray-300 rounded-full mr-3"></div>
+          <Link to="/profile">
+          <div className="w-8 h-8 bg-gray-300 rounded-full mr-3 flex justify-center items-center"><User/></div>
+          </Link>
           <div className='flex flex-col'>
             <span className="text-lg font-medium text-gray-800">Hey, Welcome!</span>
             <span className='text-[14px] text-[#B2B2B2]'>Check Your Tickets</span>

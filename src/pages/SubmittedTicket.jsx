@@ -1,10 +1,11 @@
 import React from 'react';
-import { ArrowLeft, Calendar, ClockFading,Building2 } from 'lucide-react';
+import { ArrowLeft, Calendar, ClockFading, Building2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import img4 from "../assets/img4.jpg";
 
 export default function SubmittedTicket() {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const goBack = () => {
     if (window.history.length > 1) {
@@ -29,20 +30,17 @@ export default function SubmittedTicket() {
       {/* Main Content */}
       <div className="px-4">
         {/* Gray Image Placeholder */}
-        <div className="w-full h-48 bg-gray-300 rounded-2xl mb-6"></div>
+        <div
+          className="w-full h-48 bg-gray-300 rounded-2xl mb-6 bg-cover bg-center"
+          style={{ backgroundImage: `url(${img4})` }}
+        ></div>
 
         {/* Title */}
-        <h1 className="text-2xl font-bold text-gray-800 mb-4">Title of the issue</h1>
+        <h1 className="text-2xl font-bold text-gray-800 mb-4">Potholes on the road</h1>
 
         {/* Description */}
         <p className="text-gray-600 text-sm leading-relaxed mb-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut 
-          viverra ipsum suspendisse vitae bibendum. Leo 
-          venenatis vestibulum nibh dui lacus eros consequat 
-          congue rutssa. Maecenas molestieae consequat arcu. 
-          Posuere purus. Scelerisque leo quam porttitor 
-          ornit sit platea id mauris. Mauris faucibus nulls 
-          vitam amet mauris.
+          The potholes on the road are causing inconvenience to commuters and pose a safety risk, especially during rainy weather. Immediate repair is required to prevent accidents and ensure smooth traffic flow.
         </p>
 
         {/* Bottom Action Buttons */}
@@ -53,14 +51,14 @@ export default function SubmittedTicket() {
             </div>
             <span className="text-xs text-gray-500">2/10/2025</span>
           </div>
-          
+
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center mb-2">
               <ClockFading className="w-6 h-6 text-orange-500" />
             </div>
             <span className="text-xs text-gray-500">Pending</span>
           </div>
-          
+
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center mb-2">
               <Building2 className="w-6 h-6 text-orange-500" />

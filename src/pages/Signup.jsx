@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo.jpg"
 
 // Card Component
 function Card({ children, className = "" }) {
@@ -62,7 +63,13 @@ export default function Signup() {
       <Card className="w-[320px] rounded-2xl shadow-lg bg-white p-6">
         <CardContent className="flex flex-col items-center space-y-4">
           {/* Profile Placeholder */}
-          <div className="w-24 h-24 bg-gray-200 rounded-md" />
+          <div className="flex justify-center mb-6">
+            <div
+              style={{ backgroundImage: `url(${Logo})` }}
+              className="w-[120px] h-[120px] bg-gray-200 rounded-lg flex items-center justify-center bg-cover bg-center"
+            >
+            </div>
+          </div>
 
           {/* Title */}
           <h2 className="text-xl font-bold text-black">Join us!</h2>
@@ -109,13 +116,15 @@ export default function Signup() {
           </div>
 
           {/* Register Button */}
-          <Button className="w-full  bg-orange-400 hover:bg-orange-500 text-white">
-            Register
-          </Button>
+          <Link to='/' >
+            <Button className=" w-[250px] bg-orange-400 hover:bg-orange-500 text-white">
+              Register
+            </Button>
+          </Link>
 
           {/* Footer */}
           <p className="text-sm text-gray-500">
-            Already have an account? 
+            Already have an account?
             <Link to="/login" >
               <span className="text-orange-500 cursor-pointer">Login</span>
             </Link>

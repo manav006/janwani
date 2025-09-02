@@ -33,12 +33,12 @@ const Notifications = () => {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-sm font-medium text-gray-900 mb-1">
-              Thursday's Feast Awaits!
+              Issue in Process
             </h3>
             <p className="text-sm text-gray-600 leading-tight mb-2">
-              Your Exotic Veggie Fusion is on the menu. Get excited!
+              Your ticket is being reviewed by the relevant Department.
             </p>
-            <span className="text-xs text-gray-400">3 days ago</span>
+            <span className="text-xs text-gray-400">1 min ago</span>
           </div>
         </div>
 
@@ -48,12 +48,12 @@ const Notifications = () => {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-sm font-medium text-gray-900 mb-1">
-              Thursday's Feast Awaits!
+              Issue Submitted to department.
             </h3>
             <p className="text-sm text-gray-600 leading-tight mb-2">
-              Your Exotic Veggie Fusion is on the menu. Get excited!
+              Your ticket has been forwarded to the relevant department.
             </p>
-            <span className="text-xs text-gray-400">3 days ago</span>
+            <span className="text-xs text-gray-400">1 days ago</span>
           </div>
         </div>
 
@@ -63,12 +63,12 @@ const Notifications = () => {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-sm font-medium text-gray-900 mb-1">
-              Thursday's Feast Awaits!
+              Issue Resolved!
             </h3>
             <p className="text-sm text-gray-600 leading-tight mb-2">
-              Your Exotic Veggie Fusion is on the menu. Get excited!
+              Your issue has been resolved successfully by our team.
             </p>
-            <span className="text-xs text-gray-400">3 days ago</span>
+            <span className="text-xs text-gray-400">1 days ago</span>
           </div>
         </div>
 
@@ -78,12 +78,12 @@ const Notifications = () => {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-sm font-medium text-gray-900 mb-1">
-              Thursday's Feast Awaits!
+              Issue Submitted to department. 
             </h3>
             <p className="text-sm text-gray-600 leading-tight mb-2">
-              Your Exotic Veggie Fusion is on the menu. Get excited!
+              Your ticket has been forwarded to the relevant department.
             </p>
-            <span className="text-xs text-gray-400">3 days ago</span>
+            <span className="text-xs text-gray-400">2 days ago</span>
           </div>
         </div>
 
@@ -93,10 +93,10 @@ const Notifications = () => {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-sm font-medium text-gray-900 mb-1">
-              Thursday's Feast Awaits!
+              Issue Resolved
             </h3>
             <p className="text-sm text-gray-600 leading-tight mb-2">
-              Your Exotic Veggie Fusion is on the menu. Get excited!
+              Your issue has been resolved successfully by the department.
             </p>
             <span className="text-xs text-gray-400">3 days ago</span>
           </div>
@@ -108,10 +108,25 @@ const Notifications = () => {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-sm font-medium text-gray-900 mb-1">
-              Thursday's Feast Awaits!
+              Issue in Process
             </h3>
             <p className="text-sm text-gray-600 leading-tight mb-2">
-              Your Exotic Veggie Fusion is on the menu. Get excited!
+              Your ticket is being reviewed by the relevant Department.
+            </p>
+            <span className="text-xs text-gray-400">2 days ago</span>
+          </div>
+        </div>
+
+        <div className="flex items-start py-4 rounded-xl bg-gray-50">
+          <div className="p-2 rounded-lg bg-orange-50 mr-3 flex-shrink-0">
+            <div className="w-6 h-6 text-orange-500"><Building2/></div>
+          </div>
+          <div className="flex-1 min-w-0">
+            <h3 className="text-sm font-medium text-gray-900 mb-1">
+              Issue Submitted to department. 
+            </h3>
+            <p className="text-sm text-gray-600 leading-tight mb-2">
+              Your ticket has been forwarded to the relevant department.
             </p>
             <span className="text-xs text-gray-400">3 days ago</span>
           </div>
@@ -123,27 +138,12 @@ const Notifications = () => {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-sm font-medium text-gray-900 mb-1">
-              Thursday's Feast Awaits!
+              Issue Resolved
             </h3>
             <p className="text-sm text-gray-600 leading-tight mb-2">
-              Your Exotic Veggie Fusion is on the menu. Get excited!
+              Your issue has been resolved successfully by the department.
             </p>
-            <span className="text-xs text-gray-400">3 days ago</span>
-          </div>
-        </div>
-
-        <div className="flex items-start py-4 rounded-xl bg-gray-50">
-          <div className="p-2 rounded-lg bg-orange-50 mr-3 flex-shrink-0">
-            <div className="w-6 h-6 text-orange-500"><Building2/></div>
-          </div>
-          <div className="flex-1 min-w-0">
-            <h3 className="text-sm font-medium text-gray-900 mb-1">
-              Thursday's Feast Awaits!
-            </h3>
-            <p className="text-sm text-gray-600 leading-tight mb-2">
-              Your Exotic Veggie Fusion is on the menu. Get excited!
-            </p>
-            <span className="text-xs text-gray-400">3 days ago</span>
+            <span className="text-xs text-gray-400">4 days ago</span>
           </div>
         </div>
         <div className="flex items-start py-4 rounded-xl bg-gray-50">
@@ -152,12 +152,12 @@ const Notifications = () => {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-sm font-medium text-gray-900 mb-1">
-              Thursday's Feast Awaits!
+              Issue Submitted to department.
             </h3>
             <p className="text-sm text-gray-600 leading-tight mb-2">
-              Your Exotic Veggie Fusion is on the menu. Get excited!
+              Your ticket has been forwarded to the relevant department.
             </p>
-            <span className="text-xs text-gray-400">3 days ago</span>
+            <span className="text-xs text-gray-400">5 days ago</span>
           </div>
         </div>
       </div>

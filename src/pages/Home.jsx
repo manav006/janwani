@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Ticket } from 'lucide-react'
+import { Ticket ,User} from 'lucide-react'
 import Navbar from '../Components/Navbar'
 import { Link } from 'react-router-dom'
 
@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import Image1 from '../assets/img1.jpg'
 import Image2 from '../assets/img2.jpg'
 import Image3 from '../assets/img3.jpg'
+import Image4 from '../assets/logo.jpg'
 
 const Home = () => {
   const [ticketId, setTicketId] = useState('')
@@ -15,18 +16,23 @@ const Home = () => {
   // Slideshow images from your directory
   const slides = [
     {
+      image: Image3,
+      title: "Contibute to the society",
+      description: "Your reports help us make our community a better place for everyone"
+    },
+    {
       image: Image1,
-      title: "We Solved XYZ Problem!",
-      description: "Lorem ipsum dolor consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Raise a issue",
+      description: "Report problems in your locality and help us improve the community together"
     },
     {
       image: Image2,
-      title: "Innovative Solutions",
-      description: "Our team provides cutting-edge solutions to complex problems with years of expertise."
+      title: "Raise issue by a click",
+      description: "Quickly and easily report issues with just a few taps on your phone"
     },
     {
-      image: Image3,
-      title: "24/7 Support",
+      image: Image4,
+      title: "Voice of the people",
       description: "We're available around the clock to help you with any issues you might encounter."
     }
   ]
@@ -35,7 +41,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length)
-    }, 5000) // Change slide every 5 seconds
+    }, 3000) // Change slide every 3 seconds
 
     return () => clearInterval(interval)
   }, [slides.length])
@@ -53,11 +59,11 @@ const Home = () => {
           <div className="px-4 py-6">
             {/* Profile and Greeting */}
             <div className="flex items-center space-x-3 mb-4">
+              <Link to="/Profile">
               <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
+                <User/>
               </div>
+              </Link>
               <div>
                 <h1 className="text-lg font-semibold text-gray-900">Hey, Welcome!</h1>
                 <p className="text-sm text-gray-500">Have a nice day today</p>
@@ -108,7 +114,7 @@ const Home = () => {
                   <div className="w-10 h-10 bg-orange-200 rounded-full flex items-center justify-center">
                     <Ticket className="w-5 h-5 text-orange-600" />
                   </div>
-                  <span className="font-medium text-gray-800">Raise a ticket</span>
+                  <span className="font-medium text-gray-800">Raise a Issue</span>
                 </div>
                 <svg
                   className="w-5 h-5 text-orange-500"

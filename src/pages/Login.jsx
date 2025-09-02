@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Logo from '../assets/logo.jpg'
+
 
 const Login = () => {
     const [email, setEmail] = useState('')
@@ -17,10 +19,13 @@ const Login = () => {
                 {/* <div className="rounded-2xl p-6  shadow-2xl"> */}
                 {/* Profile Image Placeholder */}
                 <div className="flex justify-center mb-6">
-                    <div className="w-30 h-25 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    <div
+                        style={{ backgroundImage: `url(${Logo})` }}
+                        className="w-[120px] h-[120px] bg-gray-200 rounded-lg flex items-center justify-center bg-cover bg-center"
+                    >
                     </div>
                 </div>
+
 
                 {/* Welcome Text */}
                 <div className="text-center mb-6">
@@ -81,12 +86,14 @@ const Login = () => {
                     </div>
 
                     {/* Login Button */}
-                    <button
-                        onClick={handleLogin}
-                        className="w-full bg-orange-400 hover:bg-orange-500 text-white font-medium py-3 rounded-lg transition-colors duration-200 shadow-md"
-                    >
-                        Login
-                    </button>
+                    <Link to='/' >
+                        <button
+
+                            className="w-full bg-orange-400 hover:bg-orange-500 text-white font-medium py-3 rounded-lg transition-colors duration-200 shadow-md"
+                        >
+                            Login
+                        </button>
+                    </Link>
 
                     {/* Sign Up Link */}
                     <div className="text-center mt-6">

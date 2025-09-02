@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { ArrowLeft } from 'lucide-react'
 import Navbar from "../Components/Navbar";
 import { useNavigate } from "react-router-dom";
+import { User } from "lucide-react";
+
 
 
 export default function EditProfile() {
@@ -35,14 +37,19 @@ export default function EditProfile() {
     return (
         <div className="flex  justify-center  h-screen bg-white">
             <div className="bg-white p-3 rounded-2xl  w-90 mt-4">
-                <div className="  flex justify-between ">
-                    <div className="flex justify-center gap-2 ">
-                        <div className="flex items-center h-7 "><div className="h-10 w-10 bg-gray-400 rounded-3xl"></div></div>
-                        <h2 className="text-lg bg-white font-medium mb-6">Edit Profile</h2>
+                <div className="flex justify-between pb-5">
+                    <div className="flex items-center gap-2">
+                        <div className="h-10 w-10 bg-gray-400 rounded-3xl flex items-center justify-center">
+                            <User />
+                        </div>
+                        <h2 className="text-lg font-medium">Edit Profile</h2>
                     </div>
 
-                    <div onClick={goBack} className="mt-1"><ArrowLeft /></div>
+                    <div onClick={goBack} className="cursor-pointer">
+                        <ArrowLeft />
+                    </div>
                 </div>
+
                 <input
                     type="text"
                     name="username"
